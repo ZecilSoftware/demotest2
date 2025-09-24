@@ -45,6 +45,13 @@ namespace Dalle3_CSharp_Advent
 
         private async void GenerateImage_Click(object sender, RoutedEventArgs e)
         {
+            // Check for missing SDK key before proceeding
+            if (string.IsNullOrWhiteSpace(OPENAI_KEY))
+            {
+                ErrorNotification.IsOpen = true;
+                return;
+            }
+
             GeneratedImage.Source = null;
             WorkingState();
 
