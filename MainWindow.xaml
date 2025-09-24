@@ -39,5 +39,14 @@
 	        IsLightDismissEnabled="True"
 	        CloseButtonContent="Got it!">
         </TeachingTip>
+        
+        <TeachingTip x:Name="ErrorNotification"
+	        Title="Missing SDK Key"
+	        Subtitle="Please add your OpenAI API key to the OPENAI_KEY constant in MainWindow.xaml.cs to use this application."
+	        PreferredPlacement="Auto"
+	        PlacementMargin="20"
+	        IsLightDismissEnabled="True"
+	        CloseButtonContent="OK">
+        </TeachingTip>
     </Grid>
 </Window>
